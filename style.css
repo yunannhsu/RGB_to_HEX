@@ -1,0 +1,31 @@
+.flex-container {
+  display:flex;
+  justify-content:space-around
+}
+
+table {
+  display:flex;
+  flex-direction: row;
+}
+.square-g {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(0, 255, 0)
+}
+.square-b {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(0, 0, 255)
+}
+.square-r {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(255, 0, 0)
+}
+
+
+.square-preview {
+  height: 80px;
+  width: 80px;
+  
+}
