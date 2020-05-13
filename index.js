@@ -2,21 +2,33 @@ const convertBtn = document.querySelector("#convertBtn")
 const displayHexNum = document.querySelector(".display-hex-num")
 const displayHexColor = document.querySelector(".display-hex-color")
 
-convertBtn.addEventListener('click', function (event) {
-  const inputvalue1 = Number(document.querySelector("#r-input").value)
-  const inputvalue2 = Number(document.querySelector("#g-input").value)
-  const inputvalue3 = Number(document.querySelector("#b-input").value)
-  if ((inputvalue1 >= 0 & inputvalue1 <= 255 & !inputvalue1 == '') & (inputvalue2 >= 0 & inputvalue2 <= 255 & !inputvalue2 == '') & (inputvalue3 >= 0 & inputvalue3 <= 255 & !inputvalue3 == '')) {
-    hexNum = switchToHex(inputvalue1, inputvalue2, inputvalue3).toUpperCase()
-    console.log(inputvalue1, inputvalue2, inputvalue3)
-    displayHexNum.innerText = hexNum
-    displayHexColor.style.backgroundColor = '#' + hexNum
-  }
-  else {
-    displayHexNum.innerText = ''
-    displayHexColor.style.backgroundColor = ''
-  }
-})
+convertBtn.addEventListener('click',function(event){
+  const inputvalue1= document.querySelector("#r-input").value
+  const inputvalue2= document.querySelector("#g-input").value
+  const inputvalue3= document.querySelector("#b-input").value
+  const iv1 = Number(inputvalue1)
+  const iv2 = Number(inputvalue2)
+  const iv3 = Number(inputvalue3)
+  
+  if((inputvalue1.length == 0 )|(inputvalue2.value == 0  )|(inputvalue3.value == 0 )){
+  console.log(inputvalue1,inputvalue2,inputvalue3)
+  displayHexNum.innerText = ''
+  displayHexColor.style.backgroundColor = ''
+  console.log("noprintblank")}
+  
+  else if ((iv1 >= 0 & iv1 <= 255)&(iv2 >= 0 & iv2 <= 255 )&(iv3 >= 0 & iv3 <= 255 )){
+  hexNum= switchToHex(inputvalue1,inputvalue2,inputvalue3).toUpperCase()
+  console.log(inputvalue1,inputvalue2,inputvalue3)
+  displayHexNum.innerText = hexNum
+  displayHexColor.style.backgroundColor = '#'+ hexNum
+  console.log("print")    }
+  
+  else{
+  console.log(inputvalue1,inputvalue2,inputvalue3)
+  displayHexNum.innerText = ''
+  displayHexColor.style.backgroundColor = ''
+  console.log("noprint")
+      }    })      
 
 function bgcolor() {
   return displayHexColor.innerHTML
