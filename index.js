@@ -17,8 +17,8 @@ convertBtn.addEventListener('click',function(event){
   console.log("noprintblank")}
   
   else if ((iv1 >= 0 & iv1 <= 255)&(iv2 >= 0 & iv2 <= 255 )&(iv3 >= 0 & iv3 <= 255 )){
-  hexNum= switchToHex(inputvalue1,inputvalue2,inputvalue3).toUpperCase()
-  console.log(inputvalue1,inputvalue2,inputvalue3)
+  hexNum= switchToHex(iv1,iv2,iv3).toUpperCase()
+  console.log(iv1,iv2,iv3)
   displayHexNum.innerText = hexNum
   displayHexColor.style.backgroundColor = '#'+ hexNum
   console.log("print")    }
