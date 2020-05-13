@@ -27,5 +27,7 @@ table {
 .square-preview {
   height: 80px;
   width: 80px;
-  
+  border-width:1px;
+  border-style:solid;
+  border-color:#000000
 }
