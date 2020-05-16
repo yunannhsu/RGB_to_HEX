@@ -13,24 +13,22 @@
   </header>
 
   <body>
-    <div class="flex-container">
-      <div>
-        <h2>RGB</h2>
-
-
-        <p id="R">R:<input type="textR" style="font-size:20px" placeholder="0~255" id="r-input"
-            class="form-control mr-2"><img class="square-r">
-        </p>
-
-        <p id="G">G:<input type="textG" style="font-size:20px" placeholder="0~255" id="g-input"
-            class="form-control mr-2"><img class="square-g"></p>
-
-        <p id="B">B:<input type="textB" style="font-size:20px" placeholder="0~255" id="b-input"
-            class="form-control mr-2"><img class="square-b"></p>
-
-        <p><button id="convertBtn" class="btn btn-info" style="font-size:16px">Convert</button></p>
-
-
+  <div class= "flex-container">
+     <div><h2>RGB</h2>
+       <table style="font-size:20px">
+         <tr>
+           <td>
+R: <input type="number"  name="points"  style="font-size:22px" placeholder="0~255" id="r-input" name="usr_name"  /><img class="square-r"></td></tr>
+         <tr>
+           <td>
+G: <input type="number"  name="points"  style="font-size:22px" placeholder="0~255" id="g-input" name="usr_name"  /><img class="square-g"></td></tr>
+         <tr>
+           <td>
+B: <input type="number"  name="points"  style="font-size:22px" placeholder="0~255" id="b-input" name="usr_name"  /><img class="square-b"></td> </tr>
+         <tr>
+         <td><input id="convertBtn" class="btn btn-info" style="font-size:18px" type="submit" value="convert" ></td>
+         </tr>
+       </table>
       </div>
 
       <div>
